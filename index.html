@@ -51,11 +51,12 @@
         Odit illum laudantium suscipit quia nostrum repellat? Cum atque provident voluptatem, accusantium, at laboriosam eveniet fuga voluptates delectus deserunt maiores illo assumenda, fugiat quis quod in placeat? Facere, neque ea.
       </p>
       
-      <div class="form_container">
-        <label for="agreement">
-          <input type="checkbox" class="custom-check-icon" id="agreement" name="agreement">
-          Я согласен с политикой конфиденциальности
-        </label>
+      <div class="checkbox_container">
+        <input type="checkbox" class="custom-check-icon" id="agreement" name="agreement">
+        <label for="agreement" class="checkbox_label"> Я согласен с политикой конфиденциальности</label>
+      </div>
+      <div class="btn_container">
+        <button type="button" onclick="closeWebApp()">Выйти</button>
         <button type="button" onclick="startBot()">Начать работу с ботом</button>
       </div>
     </div>
@@ -70,6 +71,9 @@
             } else {
                 alert("Для дальнейшей работы необходимо согласиться с политикой конфиденциальности");
             }
+        }
+        function closeWebApp() {
+          tg.close();
         }
     </script>
 </body>
