@@ -1,0 +1,211 @@
+.applicationForm{
+    padding: 5% 10% 1% 10%;
+    font-size: 24px;
+}
+.applicationForm_group{
+    width: 40%; 
+}
+
+.applicationForm_group_container{
+    display: flex;
+    justify-content: space-between;
+}
+.applicationForm_item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10%;
+    position: relative;
+}
+.applicationForm_item-error input,  .applicationForm_item-error select {
+    border-color: red !important;
+    color: red !important;
+}
+.applicationForm_item-error{
+  animation: invalid .3s ;
+}
+
+.applicationForm_item-error label{
+    color: red !important;
+}
+.applicationForm_item input, .applicationForm_item select, .css-b62m3t-container {
+    border: none;
+    outline: none;
+    border-bottom: 1px dashed black;
+    transition: all .1s ease;
+    font-weight: bold;
+    font-size: 0.833333333em;
+    width: 100%;
+}
+
+.css-13cymwt-control{
+    border: none !important;
+    outline: none !important;
+    border-bottom: 1px dashed black !important;
+    transition: all .1s ease;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100%;
+    cursor: pointer;
+}
+.applicationForm_item-error .css-b62m3t-container{
+  border-color:red;
+}
+.applicationForm_item-error  .css-1xc3v61-indicatorContainer{
+  color: red;
+}
+.applicationForm_item-error .css-1u9des2-indicatorSeparator{
+  background-color:red;
+}
+.applicationForm_item-error  .css-1jqq78o-placeholder{
+  color: red !important;
+}
+
+.css-t3ipsp-control{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.css-tr4s17-option{
+    background-color: #0074bc8e;
+}
+
+.applicationForm_item select{
+    font-weight: normal;
+}
+.applicationForm_item:has(input[type="datetime-local"]), .applicationForm_item:has(input[type="date"]) {
+    margin:20% 0;
+}
+.applicationForm_item label {
+    color: #323232;
+    font-size: 0.666666666em;
+}
+.applicationForm_container_radioInput{
+    display: flex;
+    align-items: center;
+    margin-top: 0.4166666666666667em;
+}
+
+.applicationForm_container_radioInput input[type="radio"]{
+    font-size: 12px;
+    width: auto;
+    margin-right: 0.4166666666666667em;
+}
+
+.applicationForm_radioInput_label input{
+    width: 50%;
+    font-size:0.666666666em;
+}
+.applicationFor_title{
+    display: block;
+    font-size:  1.75em;
+    padding-bottom: 1.5em;
+    color: #0075BC;
+
+}
+.applicationForm_textarea{
+    width: 100%;
+    height:13.75em;
+    background: #D2DAED2B;
+    resize: none;
+}
+.applicationForm_container_textarea{
+    width: 100%;
+    position: relative;
+    margin: 10% 0;
+}
+.applicationForm_textArea_counter{
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+}
+.applicationForm-btn-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.applicationForm-btn-container .btn{
+    font-size: 1em;
+    padding: .5em 1.25em;
+}
+
+.request_item{
+    position: relative;
+}
+
+.request_item::after{
+  content: '*';
+  color: #ED45D2;
+  position: absolute;
+  bottom: 40%;
+}
+.request_item::after{
+    content: '*';
+    color: #ED45D2;
+    position: absolute;
+    bottom: 40%;
+}
+.css-1jqq78o-placeholder, .css-wsp0cs-MultiValueGeneric{
+    font-size: 0.8333333333333334em !important;
+}
+ 
+
+.css-1jqq78o-placeholder::after{
+  content: "*";
+  color: #ED45D2;
+  position: absolute;
+  bottom: 40%;
+} 
+.request_not .css-1jqq78o-placeholder::after{
+  content: "";
+
+} 
+.request_item-select{
+    position: absolute;
+    right: 21%;
+}
+.request_item-select::after{
+    position: static;
+}
+
+
+/* multiplay select */
+
+.css-13cymwt-control{
+    border: none !important;
+}
+
+
+@keyframes invalid {
+  25%{
+    translate: 6px 0;
+  }
+  50%{
+    translate: -6px 0;
+  }
+  75%{
+    translate: 6px 0;
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  .applicationForm{
+    font-size: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 620px){
+  .applicationForm{
+    font-size: 3.5vw;
+  }
+  .applicationForm_group_container {
+    flex-direction: column;
+  }
+  .applicationForm_group {
+    width: 100%;
+  }
+
+}

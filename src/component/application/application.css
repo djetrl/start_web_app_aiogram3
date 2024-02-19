@@ -1,0 +1,67 @@
+.applications{
+  width: 100%;
+  font-size: 1em;
+  background-color: #E8F8FF;
+  position: relative;
+  padding: 0.70833333em 1.4583333em;
+  border-radius: 0.8333333em;
+  margin-bottom: 0.8333333em;
+}
+.applications-rejected{
+  background-color: #FCF2F5;
+}
+.applications_title{
+  font-size: 1.1666666em;
+}
+.applications_subtitle{
+  font-size: 0.6666666em;
+  text-wrap: nowrap;
+
+}
+.applications_group{
+  width: 70%;
+  
+}
+.applications_group:nth-child(2){
+  display: flex;
+  justify-content: space-between;
+  margin: 1.4583333em 0;
+}
+.applications_item{
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+.applications_status{
+  font-size: 0.833333em;
+  position: absolute;
+  font-weight: bold;
+  right: 0.54166666666em;
+  top:  0.54166666666em;
+}
+.applications_status-responses{
+  background-color: white;
+  padding: 0.33333333em 1.25em;
+  font-size:0.8333333333333334em;
+  border-radius: 14px;
+  border: 1px solid gray;
+  color: #0075BC;
+  font-weight: normal !important;
+}
+.applications_container_btn{
+  position: absolute;
+  right:  0.54166666666em;
+  bottom:  0.54166666666em;
+  display: flex;
+  flex-direction: column;
+}
+
+.applications_container_btn .btn:nth-child(1){
+  margin-bottom: 0.75em;
+}
+.applications_graytext{
+  color: #A8A1A1;
+}
+.applications_graytext > span{
+  color:black;
+}
